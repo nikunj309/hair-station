@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -29,5 +29,26 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+} */
+
+@layer base {
+  .nav-menu {
+    @apply lg:flex items-center gap-8;
+  }
+  .nav-menu.active {
+    @apply flex flex-col absolute top-16 left-0 w-full bg-white z-10;
+  }
+  .nav-menu a {
+    @apply block px-4 py-2 lg:px-0 lg:py-0 hover:bg-blue-700 hover:text-white transition-colors rounded;
+  }
+  .dropdown-menu {
+    @apply absolute bg-white shadow-lg rounded mt-1 w-40 lg:w-auto lg:shadow-none lg:relative lg:mt-0 lg:flex lg:flex-col lg:gap-1;
+  }
+  .dropdown-menu.show {
+    @apply block;
+  }
+  .dropdown-link {
+    @apply block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors rounded;
   }
 }
