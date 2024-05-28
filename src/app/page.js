@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import HeroSection from "./components/Herosection";
-import GallerySection from "./components/GallerySection";
-import Navbar from "./components/Navbar";
-import AboutUs from "./components/Aboutus";
-import WhyChooseUs from "./components/WhyChooseUsSection";
-import ServicesCard from "./components/ServicesCard";
-import ContactModal from "./components/ContactModal";
+import HeroSection from "../components/Herosection";
+import GallerySection from "../components/GallerySection";
+import Navbar from "../components/Navbar";
+import AboutUs from "../components/Aboutus";
+import WhyChooseUs from "../components/WhyChooseUsSection";
+import ServicesCard from "../components/ServicesCard";
+import ContactModal from "../components/ContactModal";
 import { useState } from "react";
 
 export default function Home() {

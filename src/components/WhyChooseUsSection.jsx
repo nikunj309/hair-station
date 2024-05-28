@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import whyChooseImage from '@/app/assets/i1.jpg'; // Update the path to your image
+import whyChooseImage from '@/assets/i1.jpg'; // Update the path to your image
 
 const WhyChooseUs = () => {
   return (

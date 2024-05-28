@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaCaretDown } from 'react-icons/fa';
 import Image from 'next/image';
-import logo from '@/app/assets/logo.png'; // Update the path to your logo
+import logo from '@/assets/logo.png'; // Update the path to your logo
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
