@@ -11,7 +11,7 @@ const AboutUs = () => {
           Since our inception, we at Hair Station have been dedicated to providing top-quality hair solutions, specializing in natural hair wigs for both men and women. Our extensive range includes wigs of various sizes, lengths, and colors, designed to meet the unique needs of each individual.
         </p>
         <p className="text-lg text-gray-700 mb-4">
-          Our state-of-the-art technology ensures that our wigs not only look natural but also fit seamlessly with your personal style. Whether you're looking to restore your youthful appearance or boost your confidence, our hair wigs offer numerous advantages over other hair loss solutions.
+          Our state-of-the-art technology ensures that our wigs not only look natural but also fit seamlessly with your personal style. Whether you are looking to restore your youthful appearance or boost your confidence, our hair wigs offer numerous advantages over other hair loss solutions.
         </p>
         <button className="mt-4 px-6 py-2 bg-blue-700 text-white font-bold rounded hover:bg-blue-800 transition-colors">
           Read More
