@@ -52,3 +52,10 @@ body {
     @apply block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors rounded;
   }
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px; 
+  right: 10px; 
+  z-index: 1000; 
+}

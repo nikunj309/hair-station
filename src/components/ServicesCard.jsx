@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import i1 from '@/assets/Hair_Wigs.png'
-import i2 from '@/assets/Hair_Patch.png'
-import i3 from '@/assets/Hair_Bonding.png'
+import i1 from '../assets/Hair_Wigs.png'
+import i2 from '../assets/Hair_Patch.png'
+import i3 from '../assets/Hair_Bonding.png'
 
 function ServicesCard() {
   const services = [

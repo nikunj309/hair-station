@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import HeroSection from "../components/Herosection";
 import GallerySection from "../components/GallerySection";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import AboutUs from "../components/Aboutus";
 import WhyChooseUs from "../components/WhyChooseUsSection";
 import ServicesCard from "../components/ServicesCard";

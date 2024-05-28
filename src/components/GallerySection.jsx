@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import i1 from '@/assets/i1.jpg'
-import i2 from '@/assets/i2.jpg'
+import i1 from '../assets/i1.jpg'
+import i2 from '../assets/i2.jpg'
 
 const GallerySection = () => {
     return (

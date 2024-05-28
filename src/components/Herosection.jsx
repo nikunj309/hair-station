@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import herobanner from '@/assets/herobg.jpg'
+import herobanner from '../assets/herobg.jpg'
 
 const HeroSection = () => {
     return (
