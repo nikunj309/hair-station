@@ -1,9 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import aboutImage from '../assets/i1.jpg'; // Update the path to your image
+import Head from 'next/head';
 
 const AboutUs = () => {
   return (
+    <>
+    <Head>
+    <title>About Us | Hair Station</title>
+    <meta name="description" content="Learn more about Hair Station, our top-quality hair solutions, and our natural hair wigs designed for both men and women." />
+    <meta name="keywords" content="Hair Station, natural hair wigs, hair solutions, men wigs, women wigs, hair loss solutions" />
+  </Head>
     <div className="flex flex-col-reverse lg:flex-row items-center justify-center p-8 bg-gray-100">
       <div className="lg:w-1/2 p-4">
         <h2 className="text-3xl font-bold mb-4">About Us</h2>
@@ -21,6 +28,7 @@ const AboutUs = () => {
         <Image src={aboutImage} alt="About Us" className="rounded-lg shadow-lg" />
       </div>
     </div>
+    </>
   );
 };
 

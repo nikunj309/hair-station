@@ -12,7 +12,7 @@ const Footer = () => {
           <nav className="flex gap-4">
             <a href="/" className="text-sm hover:text-gray-400 transition-colors">Home</a>
             <a href="/about" className="text-sm hover:text-gray-400 transition-colors">About Us</a>
-            <a href="/services" className="text-sm hover:text-gray-400 transition-colors">Services</a>
+            {/* <a href="/services" className="text-sm hover:text-gray-400 transition-colors">Services</a> */}
             <a href="/gallery" className="text-sm hover:text-gray-400 transition-colors">Gallery</a>
             <a href="/contact" className="text-sm hover:text-gray-400 transition-colors">Contact</a>
           </nav>

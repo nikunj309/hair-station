@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <main className="relative flex min-h-screen items-center justify-center p-6 md:p-24">
-        <div className="mt-96">
+        <div className="mt-1">
           <HeroSection />
         </div>
         <div className="mt-72">
