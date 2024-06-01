@@ -52,7 +52,7 @@ const AboutPage = () => {
                 Customer Satisfaction
               </h4>
               <p className="text-gray-700">
-                Our customers' satisfaction is our top priority, and we strive
+                Our customers satisfaction is our top priority, and we strive
                 to exceed their expectations.
               </p>
             </div>

@@ -47,7 +47,7 @@ export default function Home() {
       <div className="text-center m-5">
         <h1 className="text-2xl font-semibold">Non-surgical Hair Replacement</h1>
         <p className="my-5 mx-5 lg:mx-48">
-          Non-surgical hair replacement is the best technique for hair restoration, introduced in India by Innovative Hair Studio in 1992. It is the fastest way to get one's hair back and provides superlative looking hair. This easy technique involves developing a hair patch from human hair woven onto lace - Monofilament or ultra-skin lace. During the non-surgical hair replacement process, the hair patch or wig is customized according to the size of one's baldness and hair texture. There are three effective ways to fix a hair patch or wig on one's scalp:
+          Non-surgical hair replacement is the best technique for hair restoration, introduced in India by Innovative Hair Studio in 1992. It is the fastest way to get one is hair back and provides superlative looking hair. This easy technique involves developing a hair patch from human hair woven onto lace - Monofilament or ultra-skin lace. During the non-surgical hair replacement process, the hair patch or wig is customized according to the size of one is baldness and hair texture. There are three effective ways to fix a hair patch or wig on one is scalp:
         </p>
       </div>
 
