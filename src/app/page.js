@@ -7,7 +7,7 @@ import AboutUs from "../components/Aboutus";
 import WhyChooseUs from "../components/WhyChooseUsSection";
 import ServicesCard from "../components/ServicesCard";
 import ContactModal from "../components/ContactModal";
-import Testimonials from "../components/Testimonial";
+// import Testimonials from "../components/Testimonial";
 import Vision from "../components/Vision";
 import { useState } from "react";
 
@@ -34,7 +34,7 @@ export default function Home() {
       <WhyChooseUs />
       <Vision/>
       <ServicesCard />
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <div className="mt-6">
         <GallerySection />
       </div>

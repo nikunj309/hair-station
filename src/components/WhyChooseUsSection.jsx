@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
               Transforming Lives with Top-notch Hair Solutions
             </h3>
             <p className="mt-4 text-base text-gray-600">
-              With over five years of experience in the non-surgical hair replacement industry, we are committed to providing natural-looking, comfortable, and durable hair systems tailored to individual needs. Our exceptional customer service, innovative techniques, and passion for boosting our clients' confidence and self-esteem set us apart. Trust us to provide the perfect hair solution for you.
+              With over five years of experience in the non-surgical hair replacement industry, we are committed to providing natural-looking, comfortable, and durable hair systems tailored to individual needs. Our exceptional customer service, innovative techniques, and passion for boosting our clients confidence and self-esteem set us apart. Trust us to provide the perfect hair solution for you.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
