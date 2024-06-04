@@ -7,6 +7,8 @@ import AboutUs from "../components/Aboutus";
 import WhyChooseUs from "../components/WhyChooseUsSection";
 import ServicesCard from "../components/ServicesCard";
 import ContactModal from "../components/ContactModal";
+import Testimonials from "../components/Testimonial";
+import Vision from "../components/Vision";
 import { useState } from "react";
 
 export default function Home() {
@@ -30,7 +32,9 @@ export default function Home() {
         <AboutUs />
       </div>
       <WhyChooseUs />
+      <Vision/>
       <ServicesCard />
+      <Testimonials/>
       <div className="mt-6">
         <GallerySection />
       </div>

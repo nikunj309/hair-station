@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 const WhatsAppIcon = () => {
     const phoneNumber = '+91 ';
-    const whatsappLink = `https://api.whatsapp.com/send/?phone=%2B91`;
+    const whatsappLink = `https://api.whatsapp.com/send/?phone=%2B919898820011`;
 
     return (
         <a href={whatsappLink} className="whatsapp-float" target="_blank" rel="noopener noreferrer">

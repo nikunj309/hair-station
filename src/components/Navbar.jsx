@@ -73,27 +73,27 @@ export default function Navbar() {
       </div>
       <ul className={`lg:flex items-center gap-8 ${clicked ? 'flex flex-col absolute top-16 left-0 w-full bg-white z-10' : 'hidden'}`}>
         <li>
-          <a href="/" className="block px-4 py-2 lg:px-0 lg:py-0 hover:bg-blue-700 hover:text-white transition-colors rounded">Home</a>
+          <a href="/" className="block px-4 py-2 lg:px-0 lg:py-0 hover:text-red-500  transition-colors rounded">Home</a>
         </li>
         <li>
-          <a href="/gallery" className="block px-4 py-2 lg:px-0 lg:py-0 hover:bg-blue-700 hover:text-white transition-colors rounded">Gallery</a>
+          <a href="/gallery" className="block px-4 py-2 lg:px-0 lg:py-0 hover:text-red-500 transition-colors rounded">Gallery</a>
         </li>
         <li className="relative">
-          <button onClick={handleDropdownClick} className="flex items-center gap-2 px-4 py-2 lg:px-0 lg:py-0 hover:bg-blue-700 hover:text-white transition-colors rounded">
+          <button onClick={handleDropdownClick} className="flex items-center gap-2 px-4 py-2 lg:px-0 lg:py-0 hover:text-red-500 transition-colors rounded">
             Services <FaCaretDown />
           </button>
           <ul className={`${dropdown ? 'block' : 'hidden'} lg:absolute z-30 bg-white shadow-md rounded mt-2 lg:mt-0 lg:w-48 lg:right-0`}>
-            <li><a href="/non-surgical-hair-replacement" className="block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors rounded">Non Surgical Hair Replacement</a></li>
-            <li><a href="/Hair_Wigs" className="block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors rounded">Hair Wigs</a></li>
-            <li><a href="/wear-hair" className="block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors rounded">Wear Hair</a></li>
-            <li><a href="/services/hair-wigs" className="block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors rounded">Hair Wigs</a></li>
+            <li><a href="/non-surgical-hair-replacement" className="block px-4 py-2 hover:text-red-500 transition-colors rounded">Non Surgical Hair Replacement</a></li>
+            <li><a href="/Hair_Wigs" className="block px-4 py-2 hover:text-red-500 transition-colors rounded">Hair Wigs</a></li>
+            <li><a href="/wear-hair" className="block px-4 py-2 hover:text-red-500 transition-colors rounded">Wear Hair</a></li>
+            {/* <li><a href="/services/hair-wigs" className="block px-4 py-2 hover:text-red-500 transition-colors rounded">Hair Wigs</a></li> */}
           </ul>
         </li>
         <li>
-          <a href="/about" className="block px-4 py-2 lg:px-0 lg:py-0 hover:bg-blue-700 hover:text-white transition-colors rounded">About</a>
+          <a href="/about" className="block px-4 py-2 lg:px-0 lg:py-0 hover:text-red-500 transition-colors rounded">About</a>
         </li>
         <li>
-          <a href="/contact" className="block px-4 py-2 lg:px-0 lg:py-0 hover:bg-blue-700 hover:text-white transition-colors rounded">Contact</a>
+          <a href="/contact" className="block px-4 py-2 lg:px-0 lg:py-0 hover:text-red-500 transition-colors rounded">Contact</a>
         </li>
       </ul>
     </nav>

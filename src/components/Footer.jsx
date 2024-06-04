@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -12,7 +13,6 @@ const Footer = () => {
           <nav className="flex gap-4">
             <a href="/" className="text-sm hover:text-gray-400 transition-colors">Home</a>
             <a href="/about" className="text-sm hover:text-gray-400 transition-colors">About Us</a>
-            {/* <a href="/services" className="text-sm hover:text-gray-400 transition-colors">Services</a> */}
             <a href="/gallery" className="text-sm hover:text-gray-400 transition-colors">Gallery</a>
             <a href="/contact" className="text-sm hover:text-gray-400 transition-colors">Contact</a>
           </nav>
@@ -21,11 +21,18 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm">&copy; {new Date().getFullYear()} Hair Station. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="#" className="text-sm hover:text-gray-400 transition-colors">
-              Privacy Policy
+            <a href="#" className="text-sm hover:text-gray-400 transition-colors">Privacy Policy</a>
+            <a href="#" className="text-sm hover:text-gray-400 transition-colors">Terms of Service</a>
+          </div>
+          <div className="flex gap-4 mt-4 md:mt-0">
+            <a href="https://www.instagram.com/hair_patch_service_center/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
+              <FaInstagram size={24} />
             </a>
-            <a href="#" className="text-sm hover:text-gray-400 transition-colors">
-              Terms of Service
+            <a href="https://www.facebook.com/profile.php?id=100050719532375&ref=xav_ig_profile_web" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
+              <FaFacebook size={24} />
+            </a>
+            <a href="https://www.youtube.com/@AamilKhalifa" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition-colors">
+              <FaYoutube size={24} />
             </a>
           </div>
         </div>
