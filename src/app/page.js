@@ -9,6 +9,8 @@ import ServicesCard from "../components/ServicesCard";
 import ContactModal from "../components/ContactModal";
 // import Testimonials from "../components/Testimonial";
 import Vision from "../components/Vision";
+import VideoSection from "../components/VideoSection";
+// import tutorialVideo from '../asset'
 import { useState } from "react";
 
 export default function Home() {
@@ -19,18 +21,20 @@ export default function Home() {
   };
   return (
     <>
-      <main className="relative flex min-h-screen items-center justify-center p-6 md:p-24">
-        <div className="mt-1">
+      <main className="   items-center justify-center ">
           <HeroSection />
-        </div>
-        <div className="mt-72">
+        {/* <div className="mt-72"> */}
         <ContactModal isOpen={modalIsOpen} closeModal={closeModal} />
-      </div>
+      {/* </div> */}
       </main>
      
-      <div className="mt-7">
+      <div className="mt-2">
         <AboutUs />
       </div>
+      <VideoSection
+                title="Transforming Hair Solutions"
+                videoSrc='/v2.mp4'// Path to your video file
+            />
       <WhyChooseUs />
       <Vision/>
       <ServicesCard />

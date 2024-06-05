@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Head from "next/head";
 import CommonHeroSectionCard from "../../components/CommonSection";
-import bannerImg from '../../assets/banner.jpg';
+import bannerImg from "../../assets/banner.jpg";
 const wigs = [
   {
     id: 1,
@@ -53,18 +53,22 @@ export default function HairWigsPage() {
         </div>
       </section> */}
       <CommonHeroSectionCard
-        title='Hair Wigs'
+        title="Hair Wigs"
         imageSrc={bannerImg}
-        description=' While undergoing chemotherapy for cancer, your psychological state
-        plays an essential role in the recovery process. When choosing to
-        cover up, not just any wig would suffice. A wig is a head or hair
-        accessory made from human hair or synthetic fiber. Some people wear
-        wigs to disguise baldness.'
+        description=""
       />
       <section className="container mx-auto py-16 px-6">
-        <h2 className="text-3xl font-semibold text-center text-blue-800 mb-12">
+        <h2 className="text-3xl font-semibold text-center text-blue-800 mb-1">
           Our Hair Wigs
         </h2>
+        <div className="w-24 mx-auto mt-2 border-b-4 border-yellow-500 mb-4"></div>
+        <p className="text-lg text-center text-gray-500 mb-12">
+          While undergoing chemotherapy for cancer, your psychological state
+          plays an essential role in the recovery process. When choosing to
+          cover up, not just any wig would suffice. A wig is a head or hair
+          accessory made from human hair or synthetic fiber. Some people wear
+          wigs to disguise baldness.
+        </p>
         <div className="grid grid-cols-1 gap-12 justify-center items-center">
           {wigs.map((wig) => (
             <div

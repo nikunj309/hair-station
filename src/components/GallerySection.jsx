@@ -14,10 +14,11 @@ const GallerySection = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
                         <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Hair Patch And Services</h2>
+                        <div className="w-24 mx-auto mt-2 border-b-4 border-yellow-500 mb-2"></div>
                         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                             We offer the best hair wig treatment 
                         </p>
-                        <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        <p className="mt-4 max-w-6xl text-base text-gray-500 lg:mx-auto">
                             Hair Patch is a top molded patch made up of natural hair which is utilized to cover baldness. Hair Patch is the best treatment for male baldness. When hair growth is not possible from medications and a man can not afford to go for hair transplantation (as it is a surgical method), Hair Patch (Non Surgical Method) is the safest and easiest method to hide baldness & to have an awesome hair style.
                         </p>
                     </div>

@@ -29,7 +29,8 @@ function ServicesCard() {
   return (
     <div className="container mx-auto mt-8">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-4">Our Services</h2>
+        <h2 className="text-3xl font-bold mb-1">Our Services</h2>
+        <div className="w-24 mx-auto mt-2 border-b-4 border-yellow-500 mb-2"></div>
         <p className="text-lg text-gray-700">
           Discover our range of professional hair solutions tailored to your needs.
         </p>
@@ -56,11 +57,13 @@ function ServicesCard() {
               </p>
             </div>
             <div className="p-6 mb-6">
+              <a href='/non-surgical-hair-replacement'>
               <button
                 className="align-middle font-bold text-center uppercase text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md transition-colors duration-300 hover:bg-gray-700 hover:shadow-lg"
               >
                 Read More
               </button>
+              </a>
             </div>
           </div>
         ))}

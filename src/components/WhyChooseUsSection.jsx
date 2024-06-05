@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
+            <div className="bg-white shadow-lg rounded-lg p-6">
               <div className="flex items-center justify-center h-24 w-24 mx-auto bg-gray-100 rounded-full mb-4">
                 <Image src={hair1} alt="Price Clarity" className="h-12 w-12" />
               </div>
@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
                 Without extra costs, you can witness clearly what you get with the money you paid from Hair Station.
               </p>
             </div>
-            <div>
+            <div className="bg-white shadow-lg rounded-lg p-6">
               <div className="flex items-center justify-center h-24 w-24 mx-auto bg-gray-100 rounded-full mb-4">
                 <Image src={hair2} alt="First-class service" className="h-12 w-12" />
               </div>
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
                 We are available 24/7. You can contact us via WhatsApp or email and we will solve all your problems patiently and quickly.
               </p>
             </div>
-            <div>
+            <div className="bg-white shadow-lg rounded-lg p-6">
               <div className="flex items-center justify-center h-24 w-24 mx-auto bg-gray-100 rounded-full mb-4">
                 <Image src={hair3} alt="Top Hair Stylists" className="h-12 w-12" />
               </div>
