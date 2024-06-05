@@ -39,7 +39,7 @@ const AboutPage = () => {
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
               <h4 className="text-xl font-semibold mb-2 text-blue-800">Customer Satisfaction</h4>
               <p className="text-gray-700">
-                Our customers' satisfaction is our top priority, and we strive to exceed their expectations.
+                Our customers satisfaction is our top priority, and we strive to exceed their expectations.
               </p>
             </div>
             {/* Integrity */}
@@ -63,7 +63,7 @@ const AboutPage = () => {
             <h3 className="text-3xl font-bold mb-1 text-blue-800">Why Choose Us</h3>
             <div className="w-24 mx-auto mt-2 border-b-4 border-yellow-500 mb-2"></div>
             <p className="max-w-7xl mx-auto text-lg text-gray-500">
-              Our expertise lies in creating natural-looking, comfortable, and durable hair systems tailored to individual needs. We pride ourselves on exceptional customer service, innovative techniques, and a passion for boosting our clients' confidence and self-esteem.
+              Our expertise lies in creating natural-looking, comfortable, and durable hair systems tailored to individual needs. We pride ourselves on exceptional customer service, innovative techniques, and a passion for boosting our clients confidence and self-esteem.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

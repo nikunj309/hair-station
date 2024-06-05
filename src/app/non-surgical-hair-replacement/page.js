@@ -72,7 +72,7 @@ export default function ServicesPage() {
         <h2 className="text-4xl font-bold text-center text-blue-800 mb-1">Our Techniques</h2>
         <div className="w-24 mx-auto mt-2 border-b-4 border-yellow-500 mb-4"></div>
         <p className="text-lg text-center text-gray-500 mb-12">
-          Non-surgical hair replacement is the best technique for hair restoration which was introduced in India by Innovative Hair Studio in 1992. It is the fastest way to get one's hair back and provides superlative looking hair. It is a very easy technique in which a hair patch is developed by human hair woven onto lace - Monofilament or ultra skin lace.
+          Non-surgical hair replacement is the best technique for hair restoration which was introduced in India by Innovative Hair Studio in 1992. It is the fastest way to get ones hair back and provides superlative looking hair. It is a very easy technique in which a hair patch is developed by human hair woven onto lace - Monofilament or ultra skin lace.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {techniques.map((technique) => (
