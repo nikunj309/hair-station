@@ -104,7 +104,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaCaretDown } from 'react-icons/fa';
 import Image from 'next/image';
-import logo from '../../public/da.png'; // Update the path to your logo
+import logo from '../../public/f1.png'; // Update the path to your logo
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
