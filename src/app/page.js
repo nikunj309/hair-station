@@ -24,7 +24,9 @@ export default function Home() {
       <main className="   items-center justify-center ">
           <HeroSection />
         {/* <div className="mt-72"> */}
+        {/* <div className="relative min-h-screen bg-gray-800"> */}
         <ContactModal isOpen={modalIsOpen} closeModal={closeModal} />
+        {/* </div> */}
       {/* </div> */}
       </main>
      

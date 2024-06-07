@@ -1,110 +1,89 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { FiX } from 'react-icons/fi';
+import model from '../assets/hair-fixing.jpg'
 
 const ContactModal = ({ isOpen, closeModal }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
 
-  const handleChange = e => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({ ...prevState, [name]: value }));
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // handle form submission
+    console.log({ name, phone })
+  }
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    // Add your form submission logic here
-    console.log(formData);
-    closeModal();
-  };
 
   return (
-    <div className={`fixed z-10 mt-12 inset-0 overflow-y-auto ${isOpen ? 'block' : 'hidden'}`}>
-      <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-        <div className="fixed inset-0 transition-opacity" aria-hidden="true">
-          <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
-        </div>
-        <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-        <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-          <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 relative">
-            <button
-              type="button"
-              className="absolute top-0 right-0 m-3 text-gray-500 hover:text-gray-700 focus:outline-none"
-              onClick={closeModal}
-            >
-              <FiX className="h-6 w-6" />
-            </button>
-            <div className="sm:flex sm:items-start">
-              <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
-                <svg className="h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-                </svg>
-              </div>
-              <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-title">
-                  Contact Us
-                </h3>
-                <div className="mt-2">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        autoComplete="name"
-                        required
-                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                        placeholder="Enter your full name"
-                        value={formData.name}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email Address</label>
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        autoComplete="email"
-                        required
-                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                        placeholder="Enter your email address"
-                        value={formData.email}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        required
-                        className="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                        placeholder="Enter your message"
-                        value={formData.message}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className="mt-4">
-                      <button
-                        type="submit"
-                        className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:text-sm"
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </form>
+    <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 ${isOpen ? 'flex' : 'hidden'}`}>
+      <div className="relative w-full max-w-4xl md:h-[72%] h-auto">
+        <div className="relative flex flex-col md:flex-row h-full bg-white rounded-lg shadow dark:bg-gray-700">
+          <div className="relative flex-1 h-56 md:h-auto">
+            <Image
+              src={model}
+              alt="Hair Patch"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-t-lg md:rounded-tr-none md:rounded-l-lg"
+            />
+            <div className="absolute inset-0 bg-black opacity-50 rounded-t-lg md:rounded-tr-none md:rounded-l-lg"></div>
+          </div>
+          <div className="relative z-10 w-full md:w-1/2 p-8 flex flex-col justify-center bg-opacity-70 bg-gray-800 rounded-b-lg md:rounded-b-none md:rounded-r-lg">
+            <div className="text-center text-white mb-6">
+              <h2 className="mt-6 text-3xl font-extrabold">
+                GET YOUR HAIR PATCH
+              </h2>
+              <p className="mt-2 text-lg text-red-500">
+                DONE IN 5500 INR
+              </p>
+            </div>
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              <div className="rounded-md shadow-sm -space-y-px">
+                <div>
+                  <label htmlFor="name" className="sr-only">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                    placeholder="Enter your name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="sr-only">Phone Number</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="text"
+                    required
+                    className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                    placeholder="Enter your phone number"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
                 </div>
               </div>
-            </div>
+              <div>
+                <button
+                  type="submit"
+                  className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
-          {/* Removed Close button from here */}
         </div>
+        <button
+          className="absolute top-3 right-3 text-gray-400 hover:text-gray-500 z-20"
+          onClick={closeModal}
+        >
+          <FiX className="h-6 w-6" />
+        </button>
       </div>
     </div>
   );
