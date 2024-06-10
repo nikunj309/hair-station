@@ -5,13 +5,42 @@ import { FiX } from 'react-icons/fi';
 import model from '../assets/hair-fixing.jpg'
 
 const ContactModal = ({ isOpen, closeModal }) => {
-  const [name, setName] = useState('')
-  const [phone, setPhone] = useState('')
+  // const [name, setName] = useState('')
+  // const [phone, setPhone] = useState('')
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+  });
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async(e) => {
     e.preventDefault()
-    // handle form submission
-    console.log({ name, phone })
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbwGSSRYXywASzYc84PqjDGD0g1EKpOpc3ida6f_pcSJVR6s2h0AIJ_O4KkkPoqOtsxkHg/exec",
+      {
+        method: "POST",
+        body: new FormData(event.target),
+      }
+    );
+
+    const result = await response.json();
+    if (result.result === "success") {
+      alert("Message sent successfully!");
+      closeModal()
+      setFormData({
+        name: "",
+        phone: "",
+      });
+    } else {
+      alert("Error sending message.");
+    }
   }
 
 
@@ -49,8 +78,8 @@ const ContactModal = ({ isOpen, closeModal }) => {
                     required
                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                     placeholder="Enter your name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={formData.name}
+                    onChange={handleChange}
                   />
                 </div>
                 <div>
@@ -62,8 +91,8 @@ const ContactModal = ({ isOpen, closeModal }) => {
                     required
                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                     placeholder="Enter your phone number"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
