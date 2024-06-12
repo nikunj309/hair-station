@@ -37,6 +37,10 @@ export default function Home() {
                 title="Transforming Hair Solutions"
                 videoSrc='/v2.mp4'// Path to your video file
             />
+      <VideoSection
+                title="Revolutionary Hair Care Solutions"
+                videoSrc='/v3.mp4'// Path to your video file
+            />
       <WhyChooseUs />
       <Vision/>
       <ServicesCard />
