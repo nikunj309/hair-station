@@ -6,10 +6,10 @@ import model from '../assets/hair-fixing.jpg'
 
 const ContactModal = ({ isOpen, closeModal }) => {
   // const [name, setName] = useState('')
-  // const [phone, setPhone] = useState('')
+  const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
+    phone: null,
   });
 
   const handleChange = (e) => {
@@ -21,6 +21,7 @@ const ContactModal = ({ isOpen, closeModal }) => {
   };
 
   const handleSubmit = async(e) => {
+    setLoading(true)
     e.preventDefault()
     const response = await fetch(
       "https://script.google.com/macros/s/AKfycbwGSSRYXywASzYc84PqjDGD0g1EKpOpc3ida6f_pcSJVR6s2h0AIJ_O4KkkPoqOtsxkHg/exec",
@@ -32,14 +33,16 @@ const ContactModal = ({ isOpen, closeModal }) => {
 
     const result = await response.json();
     if (result.result === "success") {
+      setLoading(false)
       alert("Message sent successfully!");
       closeModal()
       setFormData({
         name: "",
-        phone: "",
+        phone: null,
       });
     } else {
       alert("Error sending message.");
+      setLoading(false)
     }
   }
 
@@ -87,7 +90,7 @@ const ContactModal = ({ isOpen, closeModal }) => {
                   <input
                     id="phone"
                     name="phone"
-                    type="text"
+                    type="number"
                     required
                     className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                     placeholder="Enter your phone number"
@@ -100,8 +103,8 @@ const ContactModal = ({ isOpen, closeModal }) => {
                 <button
                   type="submit"
                   className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-                >
-                  Submit
+                > {loading ? <p>Loading ....</p> : "Submit"}
+                  
                 </button>
               </div>
             </form>
