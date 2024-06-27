@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FiX } from 'react-icons/fi';
-import model from '../assets/hair-fixing.jpg'
+import model from '../assets/61imeOH5NGL._AC_UF350,350_QL80_.jpg'
 
 const ContactModal = ({ isOpen, closeModal }) => {
   // const [name, setName] = useState('')
@@ -69,6 +69,9 @@ const ContactModal = ({ isOpen, closeModal }) => {
               <p className="mt-2 text-lg text-red-500">
                 DONE IN 5500 INR
               </p>
+              <p className="mt-2 text-lg text-green-500 font-semibold">
+    Get 10% Off - Limited Time Offer!
+</p>
             </div>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="rounded-md shadow-sm -space-y-px">

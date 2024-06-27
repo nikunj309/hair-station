@@ -33,17 +33,19 @@ export default function Home() {
       <div className="mt-2">
         <AboutUs />
       </div>
-      <VideoSection
-                title="Transforming Hair Solutions"
-                videoSrc='/v2.mp4'// Path to your video file
-            />
+      <ServicesCard />
       <VideoSection
                 title="Revolutionary Hair Care Solutions"
                 videoSrc='/v3.mp4'// Path to your video file
             />
+      <VideoSection
+                title="Transforming Hair Solutions"
+                videoSrc='/v2.mp4'// Path to your video file
+            />
+     
       <WhyChooseUs />
       <Vision/>
-      <ServicesCard />
+      
       {/* <Testimonials/> */}
       <div className="mt-6">
         <GallerySection />
